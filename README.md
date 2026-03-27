@@ -10,6 +10,9 @@ Buzzer/n
 9V Battery + Battery Clip/n
 Breadboard
 Jumper Wires
+
+
+
 ⚙️ Working Principle
 
 The ultrasonic sensor sends sound waves and receives echoes. Based on the time taken, distance is calculated. If the object is too close, the buzzer turns ON.
