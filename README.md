@@ -26,7 +26,7 @@ Negative (–) → GND
 🔋 Power Supply
 9V Battery → Vin (Arduino)
 Battery GND → Arduino GND
-![image alt](
+![image alt](https://github.com/sreejavanaparthy106/third-eye-for-blind-people/blob/46b846893b7c5ae55d54559ee7f8d076842549d6/circuit%20diagram.jpg)
 
 🧠 Arduino Code
 #define trigPin 9
