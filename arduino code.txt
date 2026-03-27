@@ -1,0 +1,45 @@
+#include <Arduino.h>
+
+const int pingTrigPin = 7;
+const int pingEchoPin = 8;
+int buz = 13;
+int buz1 = 9;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(pingTrigPin, OUTPUT);
+  pinMode(pingEchoPin, INPUT);
+  pinMode(buz, OUTPUT);
+  pinMode(buz1, OUTPUT);
+}
+
+void loop() {
+
+  long duration, cm;
+
+  digitalWrite(pingTrigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(pingTrigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(pingTrigPin, LOW);
+
+  duration = pulseIn(pingEchoPin, HIGH, 30000);
+  cm = duration / 29 / 2;
+
+  if (cm > 0 && cm <= 100) {
+    int d = map(cm, 1, 100, 20, 2000);
+
+    digitalWrite(buz, HIGH);
+    digitalWrite(buz1, HIGH);
+    delay(50);
+    digitalWrite(buz, LOW);
+    digitalWrite(buz1, LOW);
+    delay(d);
+  }
+
+  Serial.print("Distance: ");
+  Serial.print(cm);
+  Serial.println(" cm");
+
+  delay(40);
+}
