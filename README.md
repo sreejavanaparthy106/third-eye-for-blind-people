@@ -40,7 +40,8 @@ The ultrasonic sensor sends sound waves and receives echoes. Based on the time t
 * 9V Battery → Vin (Arduino)
 * Battery GND → Arduino GND
 
-![image alt](https://github.com/sreejavanaparthy106/third-eye-for-blind-people/blob/46b846893b7c5ae55d54559ee7f8d076842549d6/circuit%20diagram.jpg)
+![image alt](https://github.com/sreejavanaparthy106/third-eye-for-blind-people/blob/c95f3fb2b62050be475221e21421f4483adf2621/circuit%20diagram.jpg)
+
 
 🧠 Arduino Code
 #define trigPin 9
