@@ -4,10 +4,10 @@
 This project helps visually impaired people detect obstacles using an ultrasonic sensor. When an object comes within a certain distance, a buzzer alerts the user. The system is simple, low-cost, and portable.
 
 🧰 Components Required
-Arduino Uno/n
-Ultrasonic Sensor (HC-SR04)/n
-Buzzer/n
-9V Battery + Battery Clip/n
+Arduino Uno
+Ultrasonic Sensor (HC-SR04)
+Buzzer
+9V Battery + Battery Clip
 Breadboard
 Jumper Wires
 
@@ -17,18 +17,29 @@ Jumper Wires
 
 The ultrasonic sensor sends sound waves and receives echoes. Based on the time taken, distance is calculated. If the object is too close, the buzzer turns ON.
 
-🔌 Circuit Connections
-🟢 Ultrasonic Sensor (HC-SR04)
-VCC → 5V (Arduino)
-GND → GND (Arduino)
-TRIG → Digital Pin 9
-ECHO → Digital Pin 10
-🔴 Buzzer
-Positive (+) → Digital Pin 8
-Negative (–) → GND
-🔋 Power Supply
-9V Battery → Vin (Arduino)
-Battery GND → Arduino GND
+## 🔌 Circuit Connections
+
+### 🟢 Ultrasonic Sensor (HC-SR04)
+
+* VCC → 5V (Arduino)
+* GND → GND (Arduino)
+* TRIG → Digital Pin 9
+* ECHO → Digital Pin 10
+
+---
+
+### 🔴 Buzzer
+
+* Positive (+) → Digital Pin 8
+* Negative (–) → GND
+
+---
+
+### 🔋 Power Supply
+
+* 9V Battery → Vin (Arduino)
+* Battery GND → Arduino GND
+
 ![image alt](https://github.com/sreejavanaparthy106/third-eye-for-blind-people/blob/46b846893b7c5ae55d54559ee7f8d076842549d6/circuit%20diagram.jpg)
 
 🧠 Arduino Code
