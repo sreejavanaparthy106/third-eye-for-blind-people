@@ -4,10 +4,10 @@
 This project helps visually impaired people detect obstacles using an ultrasonic sensor. When an object comes within a certain distance, a buzzer alerts the user. The system is simple, low-cost, and portable.
 
 🧰 Components Required
-Arduino Uno
-Ultrasonic Sensor (HC-SR04)
-Buzzer
-9V Battery + Battery Clip
+Arduino Uno/n
+Ultrasonic Sensor (HC-SR04)/n
+Buzzer/n
+9V Battery + Battery Clip/n
 Breadboard
 Jumper Wires
 ⚙️ Working Principle
